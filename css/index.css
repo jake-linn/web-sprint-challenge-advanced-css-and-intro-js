@@ -19,6 +19,37 @@ font-size: 100%;
 font: inherit;  
 vertical-align: baseline;  
 }
+
+@media all and (max-width: 800px) {
+    body{flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+    nav{
+        flex-flow: row;
+        flex-wrap: wrap-reverse;
+
+    }
+    footer {
+        justify-content: center;
+    }
+}
+@media all and (min-width: 500px) {
+    body {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    
+    }
+    nav{
+        display: flex;
+        flex-direction: row;
+    
+        
+
+    }
+
 /*GENERAL STYLES*/
 html{
     font-size:62.5%;
